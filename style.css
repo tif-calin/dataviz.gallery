@@ -2,7 +2,9 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif; 
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
+    sans-serif;
 }
 
 * {
@@ -11,9 +13,9 @@ body {
 
 #page {
   display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   min-height: 100vh;
   width: 100%;
   padding: 1rem;
@@ -38,14 +40,27 @@ a:hover {
 }
 
 .gallery {
+  border: 2px dashed white;
+  border-radius: 0.15rem;
   display: flex;
   gap: 2rem;
-  overflow: auto;
+  line-height: 1;
   margin-top: 4rem;
   max-width: calc(200px + 50vw);
+  overflow: auto;
+  padding: 1rem;
 }
 
-footer {
+.gallery > * {
+  background: #343a40;
+  border-radius: 0.15rem;
+  margin: 0;
+  padding: 1rem;
+}
+
+.disclaimer {
   opacity: 0.8;
   font-size: 0.8em;
+  width: 100%;
+  text-align: center;
 }
